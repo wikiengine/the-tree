@@ -12,5 +12,5 @@ const titleData = processTitle(route.params.id)
 const page = usePageStore()
 page.setTitle(titleData.title)
 page.setNamespace(titleData.namespace)
-const { data } = await useFetch(`https://plground.xyz/w/${titleData.title}:${titleData.namespace}`)
+const { data } = await useFetch("https://api.sampleapis.com/coffee/hot")
 </script>
