@@ -1,11 +1,10 @@
 <template>
 	<div>
 		<h1>{{ $route.params.id }}</h1>
-		{{ store.counter }}
+		{{ counter }}
 	</div>
 </template>
 <script setup>
-const store = useStore()
 import { useCounterStore } from '@/store/index'
 
 const counter = useCounterStore()
