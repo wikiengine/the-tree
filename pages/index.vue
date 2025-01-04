@@ -1,5 +1,4 @@
-<template>
-	<div>
-		<h1>index</h1>
-	</div>
-</template>
+<script setup>
+const frontpage = "frontpage";
+await navigateTo(`/w/${frontpage}`);
+</script>
