@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<h1>{{ $route.params.id }}</h1>
+		<pre>{{ data }}</pre>
 	</div>
 </template>
 <script setup>
@@ -11,4 +12,5 @@ const titleData = processTitle(route.params.id)
 const page = usePageStore()
 page.setTitle(titleData.title)
 page.setNamespace(titleData.namespace)
+const { data } = async useFetch(`https://plground.xyz/w/${titleData.title}:${titleData.namespace}`)
 </script>
