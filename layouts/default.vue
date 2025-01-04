@@ -10,5 +10,5 @@ import { usePageStore } from '@/store/page'
 const page = usePageStore()
 </script>
 <style>
-@import "/css/bootstrap.min.css";
+@import "~/public/css/bootstrap.min.css";
 </style>
