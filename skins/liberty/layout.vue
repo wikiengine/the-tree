@@ -27,6 +27,7 @@
 <style>
 @import "./css/bootstrap.min.css";
 @import "./css/default.css";
+@import "./css/default_mobile.css";
 </style>
 
 <script setup>
