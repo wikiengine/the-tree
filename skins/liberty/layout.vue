@@ -18,10 +18,14 @@
 					</nav>
 				</div>
       <div class="content-wrapper">
+				<div class="container-fluid liberty-content">
+				<div class="liberty-content-header">
 				<div class="title">
 					<NuxtLink to="/"><span class="namespace">{{ page.namespace }}:</span>{{ page.title }}</NuxtLink>
 	      </div>
+				</div>
 				<slot />
+				</div>
 			</div>
 <div class="scroll-buttons">
             <NuxtLink class="scroll-toc" to="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i></NuxtLink>
