@@ -17,7 +17,6 @@
 						</ul>
 					</nav>
 				</div>
-			</div>
       <div class="content-wrapper">
 				<h1>{{ page.namespace }}:{{ page.title }}</h1>
 	      <slot />
