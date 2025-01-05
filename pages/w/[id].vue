@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<h1>{{ $route.params.id }}</h1>
-		<pre>{{ data }}</pre>
+		위키 내용
+		<NuxtLink to="/w/테스트">테스트</NuxtLink>
 	</div>
 </template>
 <script setup>
@@ -12,5 +12,4 @@ const titleData = processTitle(route.params.id)
 const page = usePageStore()
 page.setTitle(titleData.title)
 page.setNamespace(titleData.namespace)
-const { data } = await useFetch("https://api.sampleapis.com/coffee/hot")
 </script>
