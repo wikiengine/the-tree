@@ -39,6 +39,7 @@
 @import "./css/bootstrap.min.css";
 @import "./css/default.css";
 @import "./css/default_mobile.css";
+@import "./css/dark.css";
 </style>
 
 <script setup>
