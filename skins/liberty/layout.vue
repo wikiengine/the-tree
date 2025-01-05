@@ -19,7 +19,7 @@
 				</div>
       <div class="content-wrapper">
 				<div class="title">
-					<NuxtLink :to=`/w/${page.namespace}:${page.title}`><span class="namespace">{{ page.namespace }}:</span>{{ page.title }}</NuxtLink>
+					<NuxtLink to="/"><span class="namespace">{{ page.namespace }}:</span>{{ page.title }}</NuxtLink>
 	      </div>
 				<slot />
 			</div>
