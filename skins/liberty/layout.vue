@@ -18,9 +18,16 @@
 					</nav>
 				</div>
       <div class="content-wrapper">
-				<h1>{{ page.namespace }}:{{ page.title }}</h1>
-	      <slot />
+				<div class="title">
+					<NuxtLink :to="/w/{{page.namespace}}:{{page.title}}"><span class="namespace">{{ page.namespace }}:</span>{{ page.title }}</NuxtLink>
+	      </div>
+				<slot />
 			</div>
+<div class="scroll-buttons">
+            <NuxtLink class="scroll-toc" to="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i></NuxtLink>
+            <NuxtLink id="left" class="scroll-button" to="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></NuxtLink>
+            <NuxtLink id="right" class="scroll-bottom" to="#bottom"><i class="fa fa-arrow-down" aria-hidden="true"></i></NuxtLink>
+        </div>
 	</div>
 </template>
 
