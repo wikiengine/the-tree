@@ -10,6 +10,13 @@ import { usePageStore } from '@/store/page'
 const route = useRoute()
 const titleData = processTitle(route.params.id)
 const page = usePageStore()
-page.setTitle(titleData.title)
-page.setNamespace(titleData.namespace)
+page.setIsDoc(true)
+page.setDocTitle(titleData.title)
+page.setDocNamespace(titleData.namespace)
+page.setViewName("wiki")
+if (titleData.namespace == "문서") {
+	page.setForceShowNamespace(false); 
+} else {
+	page.setForceShowNamespace(true); 
+}
 </script>
