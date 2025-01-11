@@ -1,7 +1,7 @@
 <template>
 	<div>
 		위키 내용
-		<NuxtLink to="/w/테스트">테스트</NuxtLink>
+		{{ data }}
 	</div>
 </template>
 <script setup>
@@ -19,4 +19,5 @@ if (titleData.namespace == "문서") {
 } else {
 	page.setForceShowNamespace(true); 
 }
+const { data } = useFetch(`/api/w/{id}`);
 </script>
