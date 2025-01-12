@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ['@pinia/nuxt'],
   nitro: {
    routeRules: {
-      '/api/**': { public: false },
+      '/server/api/**': { public: false },
     },
   },
 })
