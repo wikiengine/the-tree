@@ -19,5 +19,5 @@ if (titleData.namespace == "문서") {
 } else {
 	page.setForceShowNamespace(true); 
 }
-const { data } = useFetch(`/api/w/{id}`);
+const { data } = await useFetch(`/api/w/{id}`);
 </script>
